@@ -9,6 +9,8 @@
 - JSON 
 - How React works conceptually
 - Explain the role and functionality of each file created with npm create vite@latest
+- AppendChild and createElement
+- Virtual DOM
 
 ## ⚡Vite
 - Vite is a modern **build tool** and development server that allows you to create web applications in a simple, fast, and modular way.
@@ -72,7 +74,6 @@
 - When the state or props of a component change, React re-renders that component and updates the DOM accordingly, keeping the UI in sync with your data.
 
 ## Explain the role and functionality of each file created with npm create vite@latest
-
 - `index.html`  
   The main HTML file that loads your app. It contains the root div where React injects the UI.
 - `src/main.jsx`  
@@ -90,3 +91,9 @@
 - `appendChild` is a method used to add a new child element to a parent element in the DOM.
 - `createElement` is a method used to create a new HTML element in JavaScript.
 - `createTextNode` is a method used to create a new text node in JavaScript.
+
+## Virtual DOM
+- The Virtual DOM is a lightweight representation of the actual DOM.
+- React uses the Virtual DOM to optimize updates to the real DOM.
+- When a component's state or props change, React creates a new Virtual DOM tree and compares it to the previous one.
+- This process is called "reconciliation."
