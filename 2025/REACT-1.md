@@ -73,8 +73,6 @@
 
 ## Explain the role and functionality of each file created with npm create vite@latest
 
-# Basic React Project Structure with Vite
-
 - `index.html`  
   The main HTML file that loads your app. It contains the root div where React injects the UI.
 - `src/main.jsx`  
@@ -87,3 +85,8 @@
   Manages project dependencies, scripts, and configuration for your Node.js environment.
 - `vite.config.js (or .ts)`  
   Configuration file for Vite, specifying how the build process should work.
+
+## AppendChild and createElement
+- `appendChild` is a method used to add a new child element to a parent element in the DOM.
+- `createElement` is a method used to create a new HTML element in JavaScript.
+- `createTextNode` is a method used to create a new text node in JavaScript.
