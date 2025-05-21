@@ -1,4 +1,7 @@
 # REACT
+
+<small>Data: 21/05/2025</small>  <small>Autore: **Ferro_32**</small>
+
 ✅ Topics Covered
 - How to create a project with Vite
 - Scaffholding 
