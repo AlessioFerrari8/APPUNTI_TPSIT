@@ -58,3 +58,7 @@
 - There are two libraries
     - React: A JavaScript library for building user interfaces.
     - ReactDOM: A library that provides DOM-specific methods for React.
+
+### npm run dev vs npm run build
+- `npm run dev`: This command starts the development server and allows you to see your changes in real-time.
+- `npm run build`: This command creates an optimized production build of your application, which can be deployed to a web server.
