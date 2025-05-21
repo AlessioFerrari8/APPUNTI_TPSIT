@@ -5,9 +5,10 @@
 ✅ Topics Covered
 - How to create a project with Vite
 - Scaffholding 
-- 
 - Node.js 
 - JSON 
+- How React works conceptually
+- Explain the role and functionality of each file created with npm create vite@latest
 
 ## ⚡Vite
 - Vite is a modern **build tool** and development server that allows you to create web applications in a simple, fast, and modular way.
@@ -62,3 +63,27 @@
 ### npm run dev vs npm run build
 - `npm run dev`: This command starts the development server and allows you to see your changes in real-time.
 - `npm run build`: This command creates an optimized production build of your application, which can be deployed to a web server.
+
+## How React works conceptually
+- React is a JavaScript library for building user interfaces by breaking the UI into reusable components. Conceptually, it works like this:
+- You define components, which are pieces of UI logic and structure.
+- Each component returns JSX (a syntax extension that looks like HTML) describing what the UI should look like.
+- React uses a virtual DOM (a lightweight copy of the real DOM) to efficiently update the UI by comparing changes and applying only the necessary updates.
+- When the state or props of a component change, React re-renders that component and updates the DOM accordingly, keeping the UI in sync with your data.
+
+## Explain the role and functionality of each file created with npm create vite@latest
+
+# Basic React Project Structure with Vite
+
+- `index.html`  
+  The main HTML file that loads your app. It contains the root div where React injects the UI.
+- `src/main.jsx`  
+  The entry point for React. This file renders the React app by attaching the root component (App.jsx) to the DOM.
+- `src/App.jsx`  
+  The main React component that serves as the root of your component tree. You build your app's UI starting here.
+- `src/assets/`  
+  Folder for static files like images, fonts, or styles you want to include in your project.
+- `package.json`  
+  Manages project dependencies, scripts, and configuration for your Node.js environment.
+- `vite.config.js (or .ts)`  
+  Configuration file for Vite, specifying how the build process should work.
