@@ -1,6 +1,6 @@
 # REACT
 
-<small>Data: 21/05/2025</small>  <small>Autore: **Ferro_32**</small>
+<small>Day: 21/05/2025</small>  <small>Author: **Ferro_32**</small>
 
 ✅ Topics Covered
 - How to create a project with Vite
@@ -24,8 +24,6 @@
 - First-class support for modern frameworks such as React, Vue, Svelte, Preact, Lit, etc.
 - Extensible with plugins, including Rollup plugins.
 - Faster and leaner compared to older tools like Create React App.
-
-##
 
 ## JSON
 - JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate.
@@ -97,3 +95,86 @@
 - React uses the Virtual DOM to optimize updates to the real DOM.
 - When a component's state or props change, React creates a new Virtual DOM tree and compares it to the previous one.
 - This process is called "reconciliation."
+
+## DOM Imperativo vs Dichiarativo
+
+### Approccio Imperativo
+In the imperative approach, you manually create and manipulate every DOM element step-by-step. You explicitly tell the browser how to update the DOM:
+
+```js
+const div = document.createElement("div");
+const h1 = document.createElement("h1");
+const span = document.createElement("span");
+span.textContent = "Hello";
+const world = document.createTextNode(" World");
+h1.appendChild(span);
+h1.appendChild(world);
+div.appendChild(h1);
+document.getElementById("root").appendChild(div);
+```
+
+- You control every single step: create elements, set text, append children, etc.
+- It’s very detailed and gives you fine-grained control.
+- But it can become verbose and error-prone for complex UI.
+
+
+
+### Approccio Dichiarativo
+In the declarative approach, you describe what you want to render, and a library (like React) figures out how to update the DOM for you:
+
+```js
+const markup = {
+  type: "div",
+  children: [
+    {
+      type: "h1",
+      attributes: [{ name: "id", value: "title" }],
+      children: [
+        { type: "span", children: [{ type: "text", value: "Hello" }] },
+        { type: "text", value: " World" },
+      ],
+    },
+  ],
+};
+
+render(markup, document.getElementById("root"));
+```
+
+- You focus on describing the UI structure and content.
+- The rendering engine (like React’s virtual DOM)   figures out the minimal set of changes to update the real DOM.
+- This simplifies UI code and makes it easier to maintain.
+
+### Babel
+
+When using declarative UI libraries like React, you often write UI components using JSX syntax, which looks like HTML but is actually JavaScript.
+
+```js
+const element = (
+  <div>
+    <h1 id="title">
+      <span>Hello</span> World
+    </h1>
+  </div>
+);
+```
+Browsers don’t understand JSX natively, so this needs to be transformed into plain JavaScript. This is where Babel comes in:
+- Babel is a JavaScript compiler that transforms JSX into React.createElement calls.
+- For example, the JSX above becomes:
+
+```js
+const element = React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "h1",
+    { id: "title" },
+    React.createElement("span", null, "Hello"),
+    " World"
+  )
+);
+```
+
+- This output is what React uses to create the virtual DOM representation.
+- Babel allows you to write declarative JSX syntax but still produce imperative JavaScript code under the hood.
+
+
