@@ -42,3 +42,35 @@ Esempio di sintassi HTML corretta:
 </body>
 </html>
 ```
+
+## CSS
+CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per descrivere l'aspetto e il layout di un documento HTML. Con CSS, è possibile controllare il colore del testo, il tipo di carattere, la spaziatura tra i paragrafi, la dimensione delle immagini, la posizione degli elementi, la larghezza delle colonne e molto altro.
+
+### Caratteristiche principali del CSS
+1. **Cascading (a cascata)**: Le regole possono sovrapporsi e quelle più specifiche hanno la precedenza
+2. **Separation of Concerns**: Separa la struttura (HTML) dalla presentazione (CSS)
+3. **Riutilizzabilità**: Un singolo file CSS può essere applicato a più pagine HTML
+4. **Responsive Design**: Permette di adattare l'aspetto dei siti web a diversi dispositivi e dimensioni dello schermo
+
+### Box Model CSS
+Ogni elemento HTML viene rappresentato come un rettangolo (box) composto da:
+- **Content**: Il contenuto effettivo dell'elemento
+- **Padding**: Lo spazio tra il contenuto e il bordo
+- **Border**: Il bordo che circonda il padding e il contenuto
+- **Margin**: Lo spazio esterno al bordo
+
+### Specificity (Specificità)
+Determina quale regola CSS viene applicata quando più regole si riferiscono allo stesso elemento:
+1. Stili inline (`style="..."`) - Più alta priorità
+2. ID selectors (`#id`)
+3. Class selectors (`.class`), attribute selectors (`[type="..."]`), pseudo-classi (`:hover`)
+4. Element selectors (`p`, `div`) - Più bassa priorità
+
+### Media Queries
+Permettono di applicare stili diversi in base alle caratteristiche del dispositivo:
+```css
+@media screen and (max-width: 768px) {
+  /* Stili per schermi con larghezza massima di 768px */
+}
+```
+
