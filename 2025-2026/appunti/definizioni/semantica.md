@@ -46,6 +46,37 @@ Esempio di sintassi HTML corretta:
 ## CSS
 CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per descrivere l'aspetto e il layout di un documento HTML. Con CSS, è possibile controllare il colore del testo, il tipo di carattere, la spaziatura tra i paragrafi, la dimensione delle immagini, la posizione degli elementi, la larghezza delle colonne e molto altro.
 
+### Struttura delle regole CSS
+CSS è composto da **regole** che seguono una struttura specifica:
+
+```css
+selettore {
+  proprietà: valore;
+  proprietà: valore;
+}
+```
+
+Ogni regola CSS è formata da:
+1. **Selettore**: indica a quali elementi HTML applicare lo stile
+2. **Graffa di apertura** `{`: inizia il blocco delle dichiarazioni
+3. **Dichiarazioni**: coppie proprietà-valore separate da due punti e terminate da punto e virgola
+4. **Graffa di chiusura** `}`: chiude il blocco delle dichiarazioni
+
+Esempio di regola CSS:
+```css
+h1 {
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+}
+```
+
+In questo esempio:
+- `h1` è il **selettore** (seleziona tutti gli elementi `<h1>`)
+- `color: blue;` è una **dichiarazione** (proprietà `color` con valore `blue`)
+- `font-size: 24px;` è un'altra **dichiarazione**
+- Le graffe `{ }` delimitano il **blocco di dichiarazioni**
+
 ### Caratteristiche principali del CSS
 1. **Cascading (a cascata)**: Le regole possono sovrapporsi e quelle più specifiche hanno la precedenza
 2. **Separation of Concerns**: Separa la struttura (HTML) dalla presentazione (CSS)
