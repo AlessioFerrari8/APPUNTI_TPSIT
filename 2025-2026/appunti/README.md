@@ -4,7 +4,7 @@
 
 [23 Settembre 2025](./23-09-2025.md "HTML") • <i>Ripasso argomenti anno precedente</i>
 
-[30 Settembre 2025](./30-09-2025.md "HTML") • <i></i>
+[30 Settembre 2025](./30-09-2025.md "HTML") • <i>Introduzione js engine</i>
 
 [7 Ottobre 2025](./07-10-2025.md "HTML") • <i></i>
 
