@@ -9,7 +9,7 @@ azzetti.addEventListener("click", function() {
         
         // Controlla se il valore nella textarea è corretto
         const valoreInserito = azz.value; // Ottiene il testo dalla textarea
-        const valoreCorretto = "Azzetti"; // Il valore che consideri "vero"
+        const valoreCorretto = "Azzetti"; // Il valore "vero"
         
         if (valoreInserito === valoreCorretto) {
             azza.innerHTML = "Bevenuto, ora provalo!";
