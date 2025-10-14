@@ -8,7 +8,7 @@
 
 [7 Ottobre 2025](./07-10-2025.md "HTML") • <i>Js Engine</i>
 
-[14 Ottobre 2025](./14-10-2025.md "HTML") • <i></i>
+[14 Ottobre 2025](./14-10-2025.md "HTML") • <i>Promises</i>
 
 [21 Ottobre 2025](./21-10-2025.md "HTML") • <i></i>
 
