@@ -10,7 +10,7 @@
 
 [14 Ottobre 2025](./14-10-2025.md "HTML") • <i>Promises</i>
 
-[21 Ottobre 2025](./21-10-2025.md "HTML") • <i></i>
+[21 Ottobre 2025](./21-10-2025.md "HTML") • <i>Interrogazioni + ripasso Promises + async/await</i>
 
 [28 Ottobre 2025](./28-10-2025.md "HTML") • <i></i>
 
